@@ -1,0 +1,117 @@
+/* crée un style pour ta card et la div qui va contenire les cards */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+}
+.title-center {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  max-height: 15vh;
+  border: 1px solid burlywood;
+  -webkit-box-shadow: 0px 1px 22px 2px #aea9d3;
+  box-shadow: 0px 1px 22px 2px #aea9d3;
+  background: #ce0000;
+  background: -moz-linear-gradient(left, #ce0000 0%, #ff0000 10%, #fff628 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ce0000 0%,
+    #ff0000 10%,
+    #fff628 100%
+  );
+  background: linear-gradient(to right, #ce0000 0%, #ff0000 10%, #fff628 100%);
+}
+.menu-bar {
+  border: 1px solid magenta;
+  max-height: 100px;
+  margin: 20px auto;
+  background: rgba(255, 255, 0, 0.181);
+}
+.logo-wrap {
+  max-width: 50px;
+  min-width: 50px;
+}
+.img-logo {
+  max-width: 50px;
+  min-width: 50px;
+}
+.list-menu {
+  border: 1px solid yellow;
+}
+.menu-bar nav {
+  border: 1px solid aqua;
+  display: flex;
+  align-items: center;
+}
+.list-menu li {
+  margin-left: 2vw;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #c20b32;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+.site-title {
+  text-align: center;
+
+  color: #840e0e;
+  text-shadow: 1px 1px 2px #f5d4d4, -1px -1px 2px #edbdbd, -1px -1px 2px #ef8888;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 1.4px;
+  word-spacing: 1.4px;
+  color: #840e0e;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+.main-section {
+  width: 100%;
+  margin: 20px auto;
+}
+.title-main-section {
+  text-align: center;
+  border: 1px solid #840e0e;
+}
+.card {
+  max-width: 270px;
+  min-width: 100px;
+  max-height: 700px;
+  min-height: 520px;
+  margin: auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.54);
+}
+.card-img {
+  max-width: 250px;
+  min-width: 150px;
+}
