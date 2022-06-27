@@ -12,20 +12,24 @@ body {
   position: relative;
   width: 100vw;
 }
+
 .title-center {
   text-align: center;
 }
 
 .flex-row {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 .flex-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  align-items: center;
 }
 header {
   max-height: 15vh;
@@ -46,7 +50,7 @@ header {
   border: 1px solid magenta;
   max-height: 100px;
   margin: 20px auto;
-  background: rgba(255, 255, 0, 0.181);
+  background: rgb(255, 245, 56);
 }
 .logo-wrap {
   max-width: 50px;
@@ -57,7 +61,7 @@ header {
   min-width: 50px;
 }
 .list-menu {
-  border: 1px solid yellow;
+  border: 1px solid rgb(255, 255, 30);
 }
 .menu-bar nav {
   border: 1px solid aqua;
@@ -95,18 +99,38 @@ header {
 }
 .main-section {
   width: 100%;
-  margin: 20px auto;
+  margin: 30px 9px;
 }
 .title-main-section {
   text-align: center;
   border: 1px solid #840e0e;
+  margin-bottom: 30px;
 }
+label,
+footer {
+  font-family: sans-serif;
+}
+
+label {
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
+
 .card {
+  width: 270px;
   max-width: 270px;
   min-width: 100px;
-  max-height: 700px;
-  min-height: 520px;
+  height: 450px;
+  max-height: 450px;
+  min-height: 320px;
   margin: auto;
+  margin-top: 29px;
+  margin-right: 29px;
   border-radius: 15px;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.54);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.54);
@@ -114,4 +138,12 @@ header {
 .card-img {
   max-width: 250px;
   min-width: 150px;
+  /* margin: 20px auto; */
+  padding: 15px;
 }
+
+/* footer {
+  position: relative;
+  width: 100%;
+  margin-top: 120px;
+} */

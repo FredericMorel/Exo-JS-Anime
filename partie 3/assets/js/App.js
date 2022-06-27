@@ -774,10 +774,28 @@ let data = {
 /* Etape 2 crée une fonction qui est capable de crée une card  */
 /* la card devra avoir une entéte avec le titre de l'animée  */
 /* un body avec la small_image_url de l'animé */
-/* un footer qui contiendra la description de l'anime sur 3 lignes  */ const card =
-  document.querySelector(".cards-wrapper");
+/* un footer qui contiendra la description de l'anime sur 3 lignes  */
 function createCard(data) {
-  console.log("test titre: ", data.data[0].title);
+  // console.log("liste de dataaaaa : ", listAnime);
+  const cardWrapper = document.querySelector(".cards-wrapper");
+
+  // console.log("test titre: ", data.data[0].title);
+  for (const element in data.data) {
+    console.log("test titre: ", data.data[element].title);
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.classList.add("flex-col");
+    card.innerHTML = `<div class="header-card">
+                        <div class="body-card"><img src="${data.data[element].images.jpg.image_url}" alt="" class="card-img"></div>
+                        <h3 class="anim-title title-center">${data.data[element].title}</h3>
+                        <div class="anim-footer">
+                            <textarea class="card-description" cols="30"
+                                rows="3">${data.data[element].synopsis}</textarea>
+                                <p>${data.data[element].type}</p>
+                        </div>
+                    </div>`;
+    cardWrapper.appendChild(card);
+  }
 }
 createCard(data);
 /* 
@@ -798,7 +816,7 @@ createCard(data);
 
 /* cette fonction devra avoir comme paramétre d'entrée title,small_image_url,desc,id */
 
-/* Etape 3 parcoure le tableau de donnée que je tais fournie et génere une card pour chaque anime qui se trouve a l'interieure */
+/* Etape 3 parcoure le tableau de donnée que je t'ai fournie et génere une card pour chaque anime qui se trouve a l'interieure */
 
 /* Etap 4 Rajoute au dessus de la div qui contient les cards des boutons qui vont permetre de trier les cards par type */
 

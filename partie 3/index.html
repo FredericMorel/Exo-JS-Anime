@@ -31,14 +31,42 @@
     </header>
 
     <main id="app" class="main-section">
-        <section>
-            <h2 class="title-main-section">Résumé de vos animés</h2>
-            <div class="cards-wrapper .flex-row">
+        <h2 class="title-main-section">Résumé de vos animés</h2>
+
+        <label for="pet-select">Choisissez votre type d'animé:</label>
+
+        <select name="type-anime" id="type-anime-select">
+            <option value="">--Choisissez votre type d'animé--</option>
+            <option value="dog">ONA</option>
+            <option value="cat">TV</option>
+            <option value="hamster">Movie</option>
+            <option value="parrot">Special</option>
+        </select>
+        <section class="section-cards">
+
+
+            <div class="cards-wrapper flex-row">
 
             </div>
         </section>
 
     </main>
+    <footer>
+        <div class="menu-bar flex-row">
+            <div class="logo-wrap">
+                <img src="./assets/img/logo-anime.webp" alt="logo representant le tête d'une fille japonaise"
+                    class="img-logo">
+            </div>
+            <nav>
+                <ul class="flex-row list-menu">
+                    <li>Accueil</li>
+                    <li>Les Animés</li>
+                    <li>A propos</li>
+                    <li>Contactez-moi</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
     <script src="./assets/js/App.js"></script>
 </body>
 
