@@ -32,16 +32,19 @@
 
     <main id="app" class="main-section">
         <h2 class="title-main-section">Résumé de vos animés</h2>
+        <form>
+            <p id="p">selectedIndex: 0</p>
+            <label for="select-type-anime">Choisissez votre type d'animé:</label>
+            <select name="type-anime" id="select-type-anime">
+                <option value="">--Choisissez votre type d'animé--</option>
+                <option value="ONA">ONA</option>
+                <option value="TV">TV</option>
+                <option value="Movie">Movie</option>
+                <option value="Special">Special</option>
+            </select>
+            <button id="btn">Afficher le type selectionné</button>
+        </form>
 
-        <label for="pet-select">Choisissez votre type d'animé:</label>
-
-        <select name="type-anime" id="type-anime-select">
-            <option value="">--Choisissez votre type d'animé--</option>
-            <option value="dog">ONA</option>
-            <option value="cat">TV</option>
-            <option value="hamster">Movie</option>
-            <option value="parrot">Special</option>
-        </select>
         <section class="section-cards">
 
 

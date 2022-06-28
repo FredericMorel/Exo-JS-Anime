@@ -821,3 +821,67 @@ createCard(data);
 /* Etap 4 Rajoute au dessus de la div qui contient les cards des boutons qui vont permetre de trier les cards par type */
 
 /* Etape 5 fait en sorte que quand on click sur ces boutons on affiche que les cards du méme type que ce boutton  */
+
+function selectTypeAnime({ img, title, synologie, type }) {
+  const cardWrapper = document.querySelector(".cards-wrapper");
+  cardWrapper.innerHTML = "";
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.classList.add("flex-col");
+  card.innerHTML = `<div class="header-card">
+                        <div class="body-card"><img src="${img}" alt="" class="card-img"></div>
+                        <h3 class="anim-title title-center">${title}</h3>
+                        <div class="anim-footer">
+                            <textarea class="card-description" cols="30"
+                                rows="3">${synologie}</textarea>
+                                <p>${type}</p>
+                        </div>
+                    </div>`;
+  cardWrapper.appendChild(card);
+
+  // console.log("test titre: ", data.data[0].title);
+}
+
+const btn = document.querySelector("#btn");
+
+const typeAnime = document.querySelector("#select-type-anime");
+
+var selectElem = document.getElementById("select-type-anime");
+
+// Quand une nouvelle <option> est selectionnée
+
+selectElem.addEventListener("change", function () {
+  var index = selectElem.selectedIndex;
+  // Rapporter cette donnée au <p>
+  console.log("test1 :", index);
+  let typeSelected;
+
+  switch (index) {
+    case 1:
+      typeSelected = "ONA";
+      break;
+    case 2:
+      typeSelected = "TV";
+    case 3:
+      typeSelected = "Movie";
+      break;
+    case 4:
+      typeSelected = "Special";
+      break;
+    default:
+      break;
+  }
+  console.log("test2 :", typeSelected);
+  selectTypeAnime(data, typeSelected);
+  for (const element in data.data) {
+    if (data.data[element].type === typeSelected) {
+      const onCard = {
+        img: data.data[element].images.jpg.image_url,
+        title: data.data[element].title,
+        synologie: data.data[element].synopsis,
+        type: data.data[element].type,
+      };
+      selectTypeAnime(onCard);
+    }
+  }
+});
