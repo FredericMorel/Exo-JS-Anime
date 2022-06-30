@@ -25,7 +25,7 @@ const students = [
     name: "nonin",
     firstName: "Etienne",
     classe: "TS4",
-    professor: "algras",
+    professor: "gravel",
     average: 18,
   },
   {
