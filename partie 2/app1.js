@@ -111,10 +111,20 @@ document.querySelector("table").before(input);
 
 input.addEventListener("keyup", function (e) {
   let search = e.target.value;
+  console.log("Ce que je tape : ", search);
   let tr = document.querySelectorAll("tr");
-  console.log(tr);
+  console.log("D'abord je récupère tous les TR : ", tr);
   for (let i = 0; i < tr.length; i++) {
     let td = tr[i].getElementsByTagName("td");
-    console.log("Td de la boucle for :", td);
+    console.log("Td de la boucle for :", tr[1]);
+
+    for (let j = 0; j < td.length; j++) {
+      if (td[j].innerHTML.toLowerCase().includes(search.toLowerCase())) {
+        tr[i].style.display = "";
+        break;
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
   }
 });
