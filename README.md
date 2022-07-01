@@ -1,6 +1,6 @@
 # Exercice 3 : Build an anime Website
 
-This is an exercise whose purpose is to display a list of Japanese anime.
+This is an exercise whose purpose is to display a list of Japanese animes.
 
 ## Acknowledgements
 
