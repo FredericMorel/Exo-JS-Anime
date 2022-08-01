@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Carousel without smooth scroll</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="header-title">Les Animés</h1>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item active">Text</li>
+                <li class="list-group-item disabled" aria-disabled="true">Disabled item</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="slider-wrapper">
+        <button class="slide-arrow" id="slide-arrow-prev" type="button">&#10096;
+        </button>
+        <button class="slide-arrow" id="slide-arrow-next" type="button">&#10097;
+        </button>
+        <div class="cards-container" id="cards-container">
+            
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+            <div class="card">6</div>
+            <div class="card">7</div>
+            <div class="card">8</div>
+            <div class="card">9</div>
+            <div class="card">10</div>
+        </div>
+    </div>
+
+    <footer>
+        Pen by <a href="https://www.frederic-morel.re" target="_blank" rel="noopener">Frédéric Morel</a> <span
+            class="heart">&#127749;</span>
+    </footer>
+
+    <script src="js/data/data.js"></script>
+    <script src="js/utils/sliceString.js"></script>
+    <script src="js/utils/sliders.js"></script>
+    <script src="js/services/createCard.js"></script>
+    <script type="text/javascript" src="js/app.js"> </script>
+</body>
+
+</html>

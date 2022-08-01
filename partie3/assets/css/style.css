@@ -1,0 +1,100 @@
+/* crée un style pour ta card et la div qui va contenire les cards */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  background: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+
+  margin: 20px 0;
+  color: #f9f9f9;
+  font-size: 4vw;
+  background: #ff8741;
+  background: -moz-linear-gradient(left, #ff8741 0%, #ff0000 50%, #fffe3f 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ff8741 0%,
+    #ff0000 50%,
+    #fffe3f 100%
+  );
+  background: linear-gradient(to right, #ff8741 0%, #ff0000 50%, #fffe3f 100%);
+  text-shadow: 0px 0px 7px #fffb00;
+  -webkit-box-shadow: 0px 0px 10px 1px #000000;
+  box-shadow: 0px 1px 7px 0px #000000;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-cards {
+  width: 99%;
+  position: relative;
+  overflow: scroll;
+}
+.card {
+  max-width: 260px;
+  margin: 10px;
+  border: 1px solid blue;
+  background: rgba(255, 0, 0, 0.791);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img, .video-img .card-video{
+  max-width: 250px;
+  margin: 8px 0 8px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px rgb(255, 255, 0);
+}
+.card-title {
+  width: 98%;
+  text-align: center;
+  color: orangered;
+  text-shadow: 0px 0px 3px #000000ab;
+  background: #fffb00;
+  margin: 18px 0;
+}
+
+.card-text {
+  width: 98%;
+  height: 15%;
+  margin-bottom: 8px;
+  color: #f1f1f1;
+  background: #970000;
+  text-align: center;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.base-arrow-right{
+  position: absolute;
+  width: 100px;
+  height: 40%;
+  top: calc(100%/3.3);
+  right: 30px;
+  background-color: #00000057;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrow{
+  width: 40%;
+  margin: auto;
+}

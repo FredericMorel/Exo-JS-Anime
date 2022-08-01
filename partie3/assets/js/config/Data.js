@@ -144,7 +144,7 @@ let data = {
       },
       trailer: {
         youtube_id: "4A_X-Dvl0ws",
-        url: "https://www.youtube.com/watch?v=4A_X-Dvl0ws",
+        url: "https://www.youtube.com/embed?v=4A_X-Dvl0ws",
         embed_url:
           "https://www.youtube.com/embed/4A_X-Dvl0ws?enablejsapi=1&wmode=opaque&autoplay=1",
         images: {
