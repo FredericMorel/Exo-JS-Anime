@@ -1,9 +1,14 @@
 function sliceString( str=String,nbrLetters=Number){
+    
     if (str.length>nbrLetters){
-        str.splice(0,nbrLetters);
-        str+="...";
+        const result=str.slice(0,nbrLetters);
+        str=result+"...";
+       
     }else{
         str+="...";
+      
     }
     return str;
 }
+// TODO: 
+// FIXME: 

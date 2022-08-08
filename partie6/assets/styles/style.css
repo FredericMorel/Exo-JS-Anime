@@ -4,7 +4,7 @@
 
 body {
   max-width: 1440px;
-
+  background: #e0e0e0;
 }
 
 .header-title {
@@ -25,6 +25,8 @@ body {
 .cards-container {
   height: calc(100vh - 2rem);
   width: 100%;
+  background: #030806;
+  padding: 18px;
   display: flex;
   overflow: scroll;
 }
@@ -69,6 +71,9 @@ body {
   height: 35%;
   flex: 1 0 900px;
   margin: 8px;
+  border-radius: 10px;
+  box-shadow:  20px 20px 60px #3e977d,
+             -20px -20px 60px #54cda9;
 }
 
 .card:nth-child(1) {
@@ -117,7 +122,34 @@ body {
 
 }
 
+.img-container{
+  max-width: 80%;
+  height: 60%;
+  margin: 8px auto;
+  display: flex;
+justify-content: center;
 
+}
+.img-card{
+max-width: 100%;
+align-items: center;
+border:5px solid #6a478f;
+overflow: hidden;
+
+}
+.title-card{
+  color: blue;
+  text-shadow: 2px 2px 5px rgb(244, 236, 236),-1px -1px 5px rgb(255, 255, 255);
+  margin-left: 8px;
+  
+}
+.text-card{
+  max-width:95% ;
+  max-height: 15%;
+  overflow: hidden;
+  margin: 0 auto;
+  
+}
 
 footer {
   padding: 1em;
