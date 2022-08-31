@@ -23,6 +23,5 @@ function createVideoCard({video,title,synopsys}) {
     descriptionCard.innerText = synopsys;
     card.appendChild(descriptionCard);
     return card
-
   }
   

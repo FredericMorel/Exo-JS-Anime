@@ -28,3 +28,5 @@ function createCard({img,title,synopsys}){
     return card;
 }
 
+
+

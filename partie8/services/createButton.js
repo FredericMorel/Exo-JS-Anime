@@ -19,6 +19,7 @@ function createTypeButton(item){
         const itemTypeAnime=document.createElement('li')
         const btn=document.createElement('button')
         btn.classList.add("btn-type-"+item, "btn-type")
+        btn.id=item
         btn.setAttribute("type","button")
         btn.setAttribute('name',item)
         btn.textContent=item
@@ -51,7 +52,7 @@ function createGenreButton(item){
 getGenreAnime(animeArray).forEach(e=>{createGenreButton(e)})
 
 
-const btnOna=document.querySelector('.btn-type-ONA')
+/* const btnOna=document.querySelector('.btn-type-ONA')
 console.log(btnOna)
 btnOna.addEventListener('click',()=>{
     if(btnOna.classList.contains('btn-type,')){
@@ -61,4 +62,4 @@ btnOna.addEventListener('click',()=>{
         btnOna.classList.replace('btn-type-clicked','btn-type')
         return btnOna
     }
-})
+}) */

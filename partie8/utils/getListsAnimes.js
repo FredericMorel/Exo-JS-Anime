@@ -1,11 +1,11 @@
 const animeArray = data.data;
 
-console.log(animeArray);
+
 
 //#region Type Anime
 const typeAnimeSet = new Set()
 
-console.log(getTypeAnimeSet(animeArray));
+
 /**
  *
  *
@@ -39,6 +39,6 @@ function getGenreAnime(animeArray) {
   return genreAnimeSet
 }
 
-console.log(getGenreAnime(animeArray))
+
 
 //#end region

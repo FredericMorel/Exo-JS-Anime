@@ -2,17 +2,22 @@
 
 
 function createCard(img,title,synopsys){
-    console.log("niveau -1",img);
+    // const
     const card = document.createElement("div")
     const imgContainer=document.createElement("div")
     const titleCard= document.createElement("h3")
     const textCard = document.createElement("p")
-
+    
     card.classList="card"
+    card.addEventListener('mouseenter',()=>{
+
+    })
+    // functions call's
+
     createImgContainer(img,imgContainer)
     createTitle(title,titleCard)
     createTextCard(synopsys,textCard)
-   
+   //assemblies
     card.appendChild(imgContainer)
     card.appendChild(titleCard)
     card.appendChild(textCard)
@@ -21,15 +26,18 @@ function createCard(img,title,synopsys){
     return card
 }
 
-
+function createVideoCard(){
+    
+}
 
 function createImgContainer(img,imgContainer){
-    console.log('premier niveau img :',img)
+
     const imgCard= document.createElement('img')
     imgContainer.classList.add('img-container')
     createImgCard(img,imgCard)
     imgContainer.appendChild(imgCard)
     return imgContainer
+
 }
 
 
@@ -46,7 +54,6 @@ function createTextCard(synopsys,textCard){
 }
 
 function createTitle(title,titleCard){
-   
     titleCard.innerText=title
     titleCard.classList="title-card"
     return titleCard
