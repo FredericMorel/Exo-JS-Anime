@@ -12,7 +12,7 @@ const listTypeAnime = new Set();
   listTypeAnime.add(typeAnime);
 }); */
 const finalListTypeAnime=getListTypeAnime(listAnime);
-finalListTypeAnime.forEach((element)=>console.log(element));  
+
 
 
 
@@ -29,6 +29,7 @@ function getListTypeAnime(listAnime){
   });
   return listTypeAnime;
 };
+
 
 
 

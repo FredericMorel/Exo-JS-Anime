@@ -42,7 +42,7 @@ h1 {
 .list-cards {
   width: 99%;
   position: relative;
-  overflow: scroll;
+  overflow: visible;
 }
 .card {
   max-width: 260px;

@@ -1,22 +1,85 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth; 
 }
 
 body {
   max-width: 1440px;
-  background: #e0e0e0;
+  background: #49B695;
 }
-
+main{
+  width: 80%;
+  margin-right: 30px;
+}
 .header-title {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
+.list-type-anime,.list-genre-anime{
+  display: flex;
+  flex-direction: row;
+}
+.list-type-anime-item,.item-genre-anime{
+  list-style: none;
+  margin-left: 18px;
+}
+.btn-type,.btn-genre-anime{
+  padding: 10px 40px;
+  float: left;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3498db;
+  border-top: #49b2928a;
+  border-left: #49b29290;
+  border-bottom: 8px solid #143d583f;
+  border-right: 3px solid #0d314939;
+  text-shadow: 0px -2px #2980B9;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+ .btn-type:active{
+  transform: translate(0px,8px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 0.5px solid;
+  border-left: #49b293;
+  border-top: #49b293;
+} 
+.btn-type-clicked{
+  padding: 10px 40px;
+  float: left;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3498DB;
+  border-left: #49b293;
+  border-top: #49b293;
+  border-right: #49b293;
+  border-bottom: 1px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  display:none;
+}
+ .btn-type-clicked:active{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 8px solid;
+} 
+
+.btn-type-ONA{
+  display:block;
+}
 
 .slider-wrapper {
   width: 98vw;
-  height: 40vh;
+  height: 70vh;
   margin: 1rem;
   position: relative;
   overflow: hidden;
@@ -60,14 +123,14 @@ body {
 }
 
 #slide-arrow-next {
-  right: 0;
-  padding-left: 0.25rem;
+  right: 2rem;
+  padding-left: 0.2rem;
   border-radius: 0 2rem 2rem 0;
 }
 
 .card {
   max-width: 400px;
-  min-height: 100px;
+  min-height: 400px;
   height: 35%;
   flex: 1 0 900px;
   margin: 8px;

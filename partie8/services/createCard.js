@@ -1,0 +1,53 @@
+
+
+
+function createCard(img,title,synopsys){
+    console.log("niveau -1",img);
+    const card = document.createElement("div")
+    const imgContainer=document.createElement("div")
+    const titleCard= document.createElement("h3")
+    const textCard = document.createElement("p")
+
+    card.classList="card"
+    createImgContainer(img,imgContainer)
+    createTitle(title,titleCard)
+    createTextCard(synopsys,textCard)
+   
+    card.appendChild(imgContainer)
+    card.appendChild(titleCard)
+    card.appendChild(textCard)
+    const cardContainer=document.querySelector('.cards-container')
+    cardContainer.appendChild(card)
+    return card
+}
+
+
+
+function createImgContainer(img,imgContainer){
+    console.log('premier niveau img :',img)
+    const imgCard= document.createElement('img')
+    imgContainer.classList.add('img-container')
+    createImgCard(img,imgCard)
+    imgContainer.appendChild(imgCard)
+    return imgContainer
+}
+
+
+function createImgCard(img,imgCard){
+    imgCard.src=img
+    imgCard.alt=""
+    imgCard.classList="img-card"    
+}
+
+function createTextCard(synopsys,textCard){
+    textCard.innerText=synopsys
+    textCard.classList="text-card"
+    return textCard
+}
+
+function createTitle(title,titleCard){
+   
+    titleCard.innerText=title
+    titleCard.classList="title-card"
+    return titleCard
+}

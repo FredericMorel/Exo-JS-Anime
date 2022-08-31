@@ -64,7 +64,7 @@ function createVideoCard({video,title,desc}) {
 
 //createCard(cardModel);
 
-/* TODO: Etape 3) parcours le tableau de données que je t'ai fournie et genére une card pour chaque anime qui se trouve a l'interieure */
+/* TODO: Etape 3) parcours le tableau de données que je t'ai fournie et genére une card pour chaque anime qui se trouve a l'interieure */  
 const dataAnime = data.data;
 dataAnime.forEach((anime) => {
   if(anime.trailer.url===null){
@@ -77,9 +77,9 @@ dataAnime.forEach((anime) => {
    const title=anime.title;
    const desc=anime.synopsis;
     createVideoCard({video,title,desc});
-  }
+  }});
+
   
-});
 createBaseArrowLeft();
 createBaseArrowRight()
 /* TODO: Etape 4) Rajoute ho dessus de la div qui contient les cards des boutons qui vont permetre de trier les card par type */
