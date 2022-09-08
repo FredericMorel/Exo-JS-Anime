@@ -26,8 +26,10 @@ function createCard(img,title,synopsys){
     return card
 }
 
-function createVideoCard(){
-    
+function createVideoCard(video){
+    const videoCard= document.createElement('iframe')
+    videoCard.classList.add('video-anime')
+    videoCard.
 }
 
 function createImgContainer(img,imgContainer){

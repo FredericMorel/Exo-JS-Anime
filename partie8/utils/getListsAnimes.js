@@ -38,7 +38,9 @@ function getGenreAnime(animeArray) {
   });
   return genreAnimeSet
 }
-
-
-
 //#end region
+
+
+function displayVideo(params) {
+  '<iframe width="340" height="192" src="https://www.youtube.com/embed/4A_X-Dvl0ws" title="TVアニメ『呪術廻戦』PV第4弾" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>'
+}

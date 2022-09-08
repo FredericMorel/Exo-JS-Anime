@@ -47,7 +47,7 @@ function changeClassBtn(classBtn,animeArray){
     clsBtn.addEventListener('click',()=>{
         if (clsBtn.classList.contains('btn-type')) {
             clsBtn.classList.replace('btn-type','btn-type-clicked')
-
+            
         } else {
             clsBtn.classList.replace('btn-type-clicked','btn-type')
             
