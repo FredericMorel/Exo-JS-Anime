@@ -4,7 +4,6 @@
 console.log(animeArray);
  
 let tabCard =[]
-let i=0
 for (let prop in animeArray){
   
     const item={
@@ -47,19 +46,19 @@ for (let prop in animeArray){
       }
       
     }
-    console.log('heidi id :',item.get_video(animeArray[prop].trailer.embed_url));
+    
     item.get_id(prop)
     item.get_title(animeArray[prop].title)
     item.get_synopsis(animeArray[prop].synopsis)
     item.get_genres(animeArray[prop].genres)
     item.get_type(animeArray[prop].type)
     item.get_image(animeArray[prop].images.jpg.image_url)
-    
+    item.get_video(animeArray[prop].trailer.embed_url);
 
-    i+=1
+    
     tabCard.push(item)
 }
-console.log('cards list\'s :',tabCard)
+
 
 function getListToDisplay({video,img,title,synopsys}){
 }
@@ -74,9 +73,9 @@ const test1=function getListGenreAnime(animeArray){
 
 }
 
-for (let iterator of animeArray) {
+/* for (let iterator of animeArray) {
   console.log(iterator.genres);
   for (let iter of iterator.genres) {
     console.log('eeeeeeeeeeee',iter.name)
   }
-}
+} */

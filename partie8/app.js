@@ -11,10 +11,10 @@
 
 //#end region
 
-console.log('final countDown', getTypeAnimeSet(animeArray));
+/* console.log('final countDown', getTypeAnimeSet(animeArray));
 console.log('final CountDown', getGenreAnime(animeArray))
 
-console.log('Anime Array', animeArray[0]['title']);
+console.log('Anime Array', animeArray[0]['title']); */
 
 
 /* animeArray.forEach(element => {
