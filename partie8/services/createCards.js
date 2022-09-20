@@ -16,7 +16,7 @@ function createCards(object) {
     const textCard = document.createElement("p")
     
     card.classList = "card"
-    card.addEventListener('mouseover', (e) => {
+    card.addEventListener('mouseenter', (e) => {
         if(object.video){
             textCard.remove()
             titleCard.remove()
