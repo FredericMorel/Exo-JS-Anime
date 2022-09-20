@@ -25,12 +25,12 @@ function createCards(object) {
         setTimeout(displayVideo(object,card),3000)
         videoCard.classList.replace("video-display-none", "video-anime")
         }
-        
+    
     })
     card.addEventListener('mouseleave', (e) => {
         setTimeout(imgContainer.classList.replace('video-display-none', 'img-container'),1000), false
 
-    })
+    }) 
     // functions call's
 
     createImgContainer(object.image, imgContainer)
